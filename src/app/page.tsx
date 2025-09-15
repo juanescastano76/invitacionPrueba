@@ -51,6 +51,9 @@ export default function Home() {
             NO
           </button>
         </div>
+        <p className="mt-5">
+          Tengo el plan perfecto, se que te va a encantar demasiado{" "}
+        </p>
       </div>
     </div>
   );
