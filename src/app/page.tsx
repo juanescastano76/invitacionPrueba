@@ -49,7 +49,11 @@ export default function Home() {
             </audio>
 
             <button
-              onClick={() => (audioRef.current.muted = false)}
+              onClick={() => {
+                if (audioRef.current) {
+                  audioRef.current.muted = false;
+                }
+              }}
               className="px-4 py-2 bg-green-800 text-white rounded-lg mt-4"
             >
               🔊 Activar sonido
