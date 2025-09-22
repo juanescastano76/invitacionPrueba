@@ -25,7 +25,7 @@ export default function Home() {
     }
   };
 
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (audioRef.current) {
